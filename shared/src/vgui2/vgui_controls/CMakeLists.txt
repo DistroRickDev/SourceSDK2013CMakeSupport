@@ -1,0 +1,89 @@
+project(vgui2)
+
+set(
+	SOURCE_FILES
+	AnalogBar.cpp
+	AnimatingImagePanel.cpp
+	AnimationController.cpp
+	BitmapImagePanel.cpp
+	BuildFactoryHelper.cpp
+	BuildGroup.cpp
+	BuildModeDialog.cpp
+	Button.cpp
+	CheckButton.cpp
+	CheckButtonList.cpp
+	CircularProgressBar.cpp
+	ComboBox.cpp
+	consoledialog.cpp
+	ControllerMap.cpp
+	controls.cpp
+	cvartogglecheckbutton.cpp
+	DirectorySelectDialog.cpp
+	Divider.cpp
+	EditablePanel.cpp
+	ExpandButton.cpp
+	FileOpenDialog.cpp
+	FileOpenStateMachine.cpp
+	${PUBLIC_DIR}/filesystem_helpers.cpp
+	FocusNavGroup.cpp
+	Frame.cpp
+	GraphPanel.cpp
+	HTML.cpp
+	Image.cpp
+	ImageList.cpp
+	ImagePanel.cpp
+	InputDialog.cpp
+	KeyBindingHelpDialog.cpp
+	KeyBoardEditorDialog.cpp
+	KeyRepeat.cpp
+	Label.cpp
+	ListPanel.cpp
+	ListViewPanel.cpp
+	Menu.cpp
+	MenuBar.cpp
+	MenuButton.cpp
+	MenuItem.cpp
+	MessageBox.cpp
+	MessageDialog.cpp
+	Panel.cpp
+	PanelListPanel.cpp
+	PerforceFileExplorer.cpp
+	PerforceFileList.cpp
+	perforcefilelistframe.cpp
+	ProgressBar.cpp
+	ProgressBox.cpp
+	PropertyDialog.cpp
+	PropertyPage.cpp
+	PropertySheet.cpp
+	QueryBox.cpp
+	RadioButton.cpp
+	RichText.cpp
+	RotatingProgressBar.cpp
+	savedocumentquery.cpp
+	ScalableImagePanel.cpp
+	ScrollableEditablePanel.cpp
+	ScrollBar.cpp
+	ScrollBarSlider.cpp
+	SectionedListPanel.cpp
+	Slider.cpp
+	Splitter.cpp
+	subrectimage.cpp
+	TextEntry.cpp
+	TextImage.cpp
+	ToggleButton.cpp
+	Tooltip.cpp
+	ToolWindow.cpp
+	TreeView.cpp
+	TreeViewListControl.cpp
+	URLLabel.cpp
+	WizardPanel.cpp
+	WizardSubPanel.cpp
+	src/vgui_key_translation.cpp
+)
+
+add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES})
+
+target_include_directories(
+	${PROJECT_NAME} PRIVATE
+	${PUBLIC_DIR}
+)
